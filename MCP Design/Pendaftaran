@@ -1,0 +1,26 @@
+# Pendaftaran v2
+
+## Tujuan
+
+Halaman atau section pendaftaran harus menjadi jembatan yang jelas antara homepage dan formulir detail.
+
+## Isi Utama
+
+1. Ringkasan singkat proses pendaftaran.
+2. Pilihan jalur:
+   - pendaftaran beswan,
+   - pendaftaran donatur.
+3. CTA ke halaman atau section yang relevan.
+4. Informasi singkat mengenai apa yang akan dilihat pengguna berikutnya.
+
+## Arah Visual
+
+- Satu halaman ringan yang berisi navigasi cepat.
+- Setiap jalur ditampilkan sebagai card terpisah.
+- Teks harus pendek dan langsung mengarahkan aksi.
+
+## Acceptance Criteria
+
+- Pengguna bisa memilih jalur pendaftaran tanpa kebingungan.
+- CTA ke beswan dan donatur jelas berbeda.
+- Layout tetap sederhana di mobile.
