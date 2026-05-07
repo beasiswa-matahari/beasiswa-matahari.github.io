@@ -259,4 +259,82 @@
 
 			});
 
+	// Media carousels.
+		$('[data-carousel]').each(function() {
+
+			var $carousel = $(this),
+				$viewport = $carousel.find('.media-carousel__track'),
+				$slides = $viewport.children('.media-slide'),
+				$dots = $carousel.find('.media-carousel__dots'),
+				$prev = $carousel.find('[data-carousel-prev]'),
+				$next = $carousel.find('[data-carousel-next]'),
+				index = 0,
+				scrolling = false;
+
+			if (!$slides.length)
+				return;
+
+			$slides.each(function(i) {
+				$('<button type="button" class="media-carousel__dot" aria-label="Slide ' + (i + 1) + '"></button>')
+					.appendTo($dots)
+					.on('click', function() {
+						index = i;
+						scrollToIndex(index);
+					});
+			});
+
+			var $dotButtons = $dots.children('.media-carousel__dot');
+
+			function updateState() {
+				var width = $viewport[0].clientWidth;
+
+				if (!width)
+					return;
+
+				index = Math.max(0, Math.min($slides.length - 1, Math.round($viewport[0].scrollLeft / width)));
+				$dotButtons.removeClass('is-active').eq(index).addClass('is-active');
+				$prev.prop('disabled', index === 0);
+				$next.prop('disabled', index === $slides.length - 1);
+			}
+
+			function scrollToIndex(nextIndex) {
+				var width = $viewport[0].clientWidth;
+
+				index = Math.max(0, Math.min($slides.length - 1, nextIndex));
+
+				$viewport[0].scrollTo({
+					left: index * width,
+					behavior: 'smooth'
+				});
+
+				updateState();
+			}
+
+			$prev.on('click', function() {
+				scrollToIndex(index - 1);
+			});
+
+			$next.on('click', function() {
+				scrollToIndex(index + 1);
+			});
+
+			$viewport.on('scroll', function() {
+				if (scrolling)
+					return;
+
+				scrolling = true;
+
+				window.requestAnimationFrame(function() {
+					updateState();
+					scrolling = false;
+				});
+			});
+
+			$window.on('resize.carousel', function() {
+				scrollToIndex(index);
+			});
+
+			updateState();
+		});
+
 })(jQuery);
