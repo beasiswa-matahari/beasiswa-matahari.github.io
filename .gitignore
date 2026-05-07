@@ -1,0 +1,26 @@
+# Codex / agent workspace metadata
+.agents/
+.codex/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+
+# Logs and transient files
+*.log
+*.tmp
+
+# Common local dev folders
+node_modules/
+dist/
+build/
+coverage/
+.vscode/
+.idea/
