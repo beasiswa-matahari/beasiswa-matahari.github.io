@@ -10,9 +10,10 @@
 
 		<div class="v2-shell">
 			<header class="v2-topbar">
+				<button class="v2-menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
 				<a class="brand" href="index.html">
 					<strong>Beasiswa Matahari</strong>
-					<span>Testimoni dan dukungan</span>
+					<span>Testimoni dan Dukungan</span>
 				</a>
 				<nav class="v2-nav" aria-label="Navigasi utama">
 					<a href="index.html">Homepage</a>
@@ -20,8 +21,13 @@
 					<a href="pengurus.html">Pengurus</a>
 					<a href="pencapaian.html">Pencapaian</a>
 					<a href="testimoni.html" aria-current="page">Testimoni</a>
-					<a href="donatur-faq.html">FAQ Donatur</a>
-					<a href="beswan-faq.html">FAQ Beswan</a>
+					<div class="dropdown">
+						<a href="javascript:void(0);" class="dropbtn" onclick="this.parentElement.classList.toggle('is-active'); return false;">FAQ ▾</a>
+						<div class="dropdown-content">
+							<a href="donatur-faq.html">FAQ Donatur</a>
+							<a href="beswan-faq.html">FAQ Beswan</a>
+						</div>
+					</div>
 				</nav>
 			</header>
 
@@ -29,9 +35,8 @@
 				<section class="v2-card v2-hero">
 					<div class="v2-hero-copy">
 						<p class="eyebrow">Testimoni</p>
-						<h1>Dukungan yang Terasa Nyata dari Kampus dan Komunitas</h1>
-						<p class="v2-lead">Halaman ini merangkum pandangan para dosen dan pihak kampus yang melihat Beasiswa Matahari sebagai ruang yang bermanfaat bagi mahasiswa Astronomi ITB.</p>
-						<p class="v2-copy">Testimoni ditampilkan sebagai kartu yang mudah dipindai sehingga pengunjung bisa langsung menangkap kredibilitas program tanpa membaca blok teks panjang yang melelahkan.</p>
+						<h1>Dukungan dari Kampus dan Komunitas</h1>
+						<p class="v2-lead">Pandangan para dosen dan pihak kampus yang melihat Beasiswa Matahari sebagai ruang yang bermanfaat bagi mahasiswa Astronomi ITB.</p>
 						<div class="v2-actions">
 							<a href="pengurus.html" class="v2-button primary">Lihat Pengurus</a>
 							<a href="index.html" class="v2-button">Kembali ke Beranda</a>
@@ -55,7 +60,7 @@
 					<div class="testimonial-showcase">
 						<div class="testimonial-card">
 							<div class="stars">★★★★★</div>
-							<p class="quote">Selaku Kaprodi Sarjana Astronomi saya mengapresiasi dan mendukung inisiatif para alumni Astronomi ITB melalui Beasiswa Matahari untuk membantu adik-adik yang membutuhkan bantuan finansial dalam kuliahnya. Selama beberapa tahun ini saya mengikuti bagaimana pengurus beasiswa Matahari dengan sukarela dan penuh dedikasi berupaya mengumpulkan dan mengelola dana, termasuk menyeleksi penerima beasiswa secara transparan dan akuntabel.</p>
+							<p class="quote">Selaku Kaprodi Sarjana Astronomi saya mengapresiasi dan mendukung inisiatif para alumni Astronomi ITB melalui Beasiswa Matahari untuk membantu adik-adik yang membutuhkan bantuan finansial dalam kuliahnya. Selama beberapa tahun ini saya mengikuti bagaimana pengurus Beasiswa Matahari dengan sukarela dan penuh dedikasi berupaya mengumpulkan dan mengelola dana, termasuk menyeleksi penerima beasiswa secara transparan dan akuntabel.</p>
 							<div class="testimonial-author">
 								<div class="author-line"></div>
 								<h3>Dr. Rer. Nat Hesti Retno Tri Wulandari</h3>
@@ -65,7 +70,7 @@
 
 						<div class="testimonial-card featured">
 							<div class="stars">★★★★★</div>
-							<p class="quote">Seperti Matahari yang memberikan kehangatan bagi kehidupan di Bumi, beasiswa Matahari pun menjadi sumber pencerahan bagi mahasiswa Astronomi. Semoga beasiswa Matahari akan terus berkembang, berkelanjutan, dan selalu menjadi beasiswa yang bermanfaat dalam dunia kemahasiswaan, serta selalu mendapat dukungan dari semua pihak.</p>
+							<p class="quote">Seperti Matahari yang memberikan kehangatan bagi kehidupan di Bumi, Beasiswa Matahari pun menjadi sumber pencerahan bagi mahasiswa Astronomi. Semoga Beasiswa Matahari akan terus berkembang, berkelanjutan, dan selalu menjadi beasiswa yang bermanfaat dalam dunia kemahasiswaan, serta selalu mendapat dukungan dari semua pihak.</p>
 							<div class="testimonial-author">
 								<div class="author-line"></div>
 								<h3>Dr. Aprilia</h3>
@@ -78,8 +83,8 @@
 							<p class="quote">Astronomi adalah ilmu yang inklusif dan berdampak besar terhadap peradaban. Ayo berbagi melalui Beasiswa Matahari. Berbagi itu menyejukkan dan menjadi cahaya untuk kemajuan bersama.</p>
 							<div class="testimonial-author">
 								<div class="author-line"></div>
-								<h3>Dr. Dhani Herdiwijaya</h3>
-								<p class="meta">Dosen Program Studi Astronomi ITB</p>
+								<h3>Prof. Dhani Herdiwijaya</h3>
+								<p class="meta">Guru Besar FMIPA ITB</p>
 							</div>
 						</div>
 					</div>
@@ -89,7 +94,7 @@
 					<div class="footer-cta">
 						<div>
 							<p class="eyebrow">Langkah Berikutnya</p>
-							<h2>Ingin Melihat Dampak Program Lebih Jauh?</h2>
+							<h2>Ingin melihat dampak program lebih jauh?</h2>
 							<p>Anda bisa lanjut ke halaman pencapaian untuk melihat penyaluran dana dan laporan program yang dirangkum lebih detail.</p>
 						</div>
 						<div class="v2-actions">

@@ -10,9 +10,10 @@
 
 		<div class="v2-shell">
 			<header class="v2-topbar">
+				<button class="v2-menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
 				<a class="brand" href="index.html">
 					<strong>Beasiswa Matahari</strong>
-					<span>Alumni untuk mahasiswa Astronomi ITB</span>
+					<span>Alumni untuk Mahasiswa Astronomi ITB</span>
 				</a>
 				<nav class="v2-nav" aria-label="Navigasi utama">
 					<a href="index.html" aria-current="page">Homepage</a>
@@ -20,8 +21,13 @@
 					<a href="pengurus.html">Pengurus</a>
 					<a href="pencapaian.html">Pencapaian</a>
 					<a href="testimoni.html">Testimoni</a>
-					<a href="donatur-faq.html">FAQ Donatur</a>
-					<a href="beswan-faq.html">FAQ Beswan</a>
+					<div class="dropdown">
+						<a href="javascript:void(0);" class="dropbtn" onclick="this.parentElement.classList.toggle('is-active'); return false;">FAQ ▾</a>
+						<div class="dropdown-content">
+							<a href="donatur-faq.html">FAQ Donatur</a>
+							<a href="beswan-faq.html">FAQ Beswan</a>
+						</div>
+					</div>
 				</nav>
 			</header>
 
@@ -29,11 +35,11 @@
 				<section class="v2-card v2-hero">
 					<div class="v2-hero-copy">
 						<p class="eyebrow">Beasiswa Matahari</p>
-						<h1>Ruang Dukungan yang Hangat untuk Mahasiswa Astronomi ITB</h1>
+						<h1>Dukungan Pendidikan untuk Mahasiswa Astronomi ITB</h1>
 						<p class="v2-lead">Beasiswa Matahari menghubungkan alumni, donatur, dan mahasiswa aktif agar bantuan pendidikan terasa lebih dekat, jelas, dan mudah diikuti.</p>
 						<p class="v2-copy">Di sini Anda bisa langsung memahami misi program, memilih jalur aksi, dan menemukan halaman yang paling relevan tanpa harus menelusuri banyak klik.</p>
 						<div class="v2-actions">
-							<a href="formulir.html" class="v2-button primary">Daftar Beswan</a>
+							<a href="formulir.html" class="v2-button primary">Jadi Beswan</a>
 							<a href="formulir.html#donatur" class="v2-button">Jadi Donatur</a>
 							<a href="pencapaian.html" class="v2-button">Lihat Dampak</a>
 						</div>
@@ -50,9 +56,7 @@
 
 				<section class="v2-section v2-card">
 					<div class="section-head">
-						<p class="eyebrow">Mulai dari Sini</p>
 						<h2>Akses Cepat</h2>
-						<p>Kartu-kartu berikut membantu pengunjung langsung lompat ke halaman yang paling relevan tanpa harus mencari sendiri.</p>
 					</div>
 
 					<div class="v2-grid quick-grid">
@@ -233,7 +237,7 @@
 					<div class="footer-cta">
 						<div>
 							<p class="eyebrow">Kontak Kami</p>
-							<h2>Masih Ada Pertanyaan?</h2>
+							<h2>Masih ada pertanyaan?</h2>
 							<p>Silakan hubungi tim Beasiswa Matahari untuk informasi donasi, pendaftaran, atau kebutuhan lain yang belum terjawab di halaman ini.</p>
 						</div>
 						<div class="v2-actions">

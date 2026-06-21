@@ -10,9 +10,10 @@
 
 		<div class="v2-shell">
 			<header class="v2-topbar">
+				<button class="v2-menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
 				<a class="brand" href="index.html">
 					<strong>Beasiswa Matahari</strong>
-					<span>FAQ donatur</span>
+					<span>FAQ Donatur</span>
 				</a>
 				<nav class="v2-nav" aria-label="Navigasi utama">
 					<a href="index.html">Homepage</a>
@@ -20,8 +21,13 @@
 					<a href="pengurus.html">Pengurus</a>
 					<a href="pencapaian.html">Pencapaian</a>
 					<a href="testimoni.html">Testimoni</a>
-					<a href="donatur-faq.html" aria-current="page">FAQ Donatur</a>
-					<a href="beswan-faq.html">FAQ Beswan</a>
+					<div class="dropdown">
+						<a href="javascript:void(0);" class="dropbtn" aria-current="page" onclick="this.parentElement.classList.toggle('is-active'); return false;">FAQ ▾</a>
+						<div class="dropdown-content">
+							<a href="donatur-faq.html" aria-current="page">FAQ Donatur</a>
+							<a href="beswan-faq.html">FAQ Beswan</a>
+						</div>
+					</div>
 				</nav>
 			</header>
 
@@ -29,7 +35,7 @@
 				<section class="v2-card v2-hero">
 					<div class="v2-hero-copy">
 						<p class="eyebrow">FAQ Donatur</p>
-						<h1>Jawaban yang Cepat Dipindai untuk Calon Donatur</h1>
+						<h1>Jawaban Ringkas untuk Calon Donatur</h1>
 						<p class="v2-lead">Bagian ini merangkum pertanyaan paling umum tentang proses donasi, pengingat pembayaran, dan laporan yang akan diterima.</p>
 						<p class="v2-copy">Tujuannya sederhana: membantu calon donatur merasa aman, jelas, dan cepat menemukan jawaban sebelum melangkah ke formulir.</p>
 						<div class="v2-actions">
@@ -56,17 +62,17 @@
 
 					<div class="v2-grid">
 						<article class="stack-card">
-							<h3>Saya Ingin Berdonasi Tapi Kesulitan Mengakses Link, Bolehkah Pengurus Bantu Isikan Data-data yang Diperlukan?</h3>
+							<h3>Saya ingin berdonasi tapi kesulitan mengakses link, bolehkah pengurus bantu isikan data-data yang diperlukan?</h3>
 							<p>Tentu saja.</p>
 						</article>
 
 						<article class="stack-card">
-							<h3>Saya Ingin Donasi Setiap Bulan, Tapi Saya Takut Terlupa. Apakah Ada Reminder Setiap Bulannya?</h3>
+							<h3>Saya ingin donasi setiap bulan, tapi saya takut terlupa. Apakah ada reminder setiap bulannya?</h3>
 							<p>Reminder dikirimkan melalui e-mail kepada donatur terdaftar yang belum melakukan transfer donasi.</p>
 						</article>
 
 						<article class="stack-card">
-							<h3>Apakah Ada Laporan Keuangan dan Kinerja Pengurus?</h3>
+							<h3>Apakah ada laporan keuangan dan kinerja pengurus?</h3>
 							<p>Laporan keuangan akan diberikan setiap bulan melalui email, sedangkan laporan kinerja pengurus, berupa laporan seleksi pendaftaran beswan, akan dibagikan setiap semesternya.</p>
 						</article>
 					</div>
@@ -76,7 +82,7 @@
 					<div class="footer-cta">
 						<div>
 							<p class="eyebrow">Langkah Berikutnya</p>
-							<h2>Siap Lanjut ke Formulir?</h2>
+							<h2>Siap lanjut ke formulir?</h2>
 							<p>Kalau jawaban di atas sudah cukup, Anda bisa langsung menuju formulir donatur dan melanjutkan proses pendaftaran.</p>
 						</div>
 						<div class="v2-actions">

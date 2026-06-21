@@ -337,4 +337,15 @@
 			updateState();
 		});
 
+	// Mobile Navigation Toggle
+		$('.v2-menu-toggle').on('click', function(e) {
+			e.preventDefault();
+			var $nav = $('.v2-nav');
+			var $toggle = $(this);
+			
+			$nav.toggleClass('is-open');
+			var isExpanded = $nav.hasClass('is-open');
+			$toggle.attr('aria-expanded', isExpanded);
+		});
+
 })(jQuery);
